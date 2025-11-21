@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porfolio André Chéchile proyecto final</title>
+  <!-- Enlace a la tipografía Inter desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="kakaw.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <h1>André Chéchile</h1>
+  <nav>
+    <a href="#hero"><a href="../index.html">INICIO</a></a>
+    <a href="#about">DESCRIPCIÓN</a>
+    <a href="#portfolio">EMPAQUES</a>
+    <a href="#contact">CONTACTO</a>
+  </nav>
+</header>
+
+<!-- ===== HERO / INICIO ===== -->
+<section id="hero">
+</section>
+
+<!-- ===== SOBRE MI ===== -->
+<section id="about">
+ <h2>KAKAW</h2>
+  <p><b>Situación</b><br>
+  El proyecto surge a partir de la necesidad de desarrollar una identidad
+   visual sólida para una línea de chocolates artesanales que refleje su 
+   origen natural, calidad y herencia cultural. En un contexto de consumo
+    donde los compradores valoran lo auténtico y lo artesanal, se buscó destacar
+     la conexión ancestral del cacao con los pueblos originarios de Mesoamérica, 
+     reivindicando su simbolismo y su historia. La marca “KAKAW” nace de esta raíz 
+     cultural, tomando su nombre del término mesoamericano para el cacao, y se posiciona 
+     como un producto que une tradición, diseño y contemporaneidad. <br> <br>
+     <b>Tarea</b><br>
+     El objetivo principal fue diseñar una línea coherente de envases
+      que pudiera diferenciar cada variedad (amargo, blanco y sin azúcar/sin TACC)
+       manteniendo una identidad unificada. El desafío consistía en transmitir la 
+       esencia ancestral del cacao y, al mismo tiempo, adaptar el lenguaje visual a
+        distintos perfiles de consumidores: quienes buscan sabores intensos, quienes
+         prefieren lo delicado y quienes priorizan opciones saludables. Además, era 
+         fundamental generar un valor estético y simbólico que posicionara el producto 
+         dentro del segmento premium de chocolates artesanales.
+         <br>
+         <br>
+         <b>Acción</b><br>
+         Se desarrolló una identidad visual basada en tres pilares conceptuales:
+          origen ancestral, simbología botánica y elegancia visual.
+        <br><br>
+          _Para el chocolate amargo, se representó una vaina de cacao
+             en trazo dorado sobre fondo bordó profundo, con patrones
+              geométricos inspirados en el arte maya. Este diseño evoca respeto por
+               la tierra, la tradición y la intensidad del sabor
+               <br><br>
+          _En el chocolate blanco, la flor de vainilla 
+            se convierte en protagonista, comunicando suavidad 
+            y refinamiento a través de un trazo dorado sobre fondo claro.
+            <br><br>
+          _En la variedad sin azúcar ni gluten, la rama con hojas
+             simboliza salud y equilibrio, reforzada por una paleta en
+              celeste y dorado, y la inclusión de sellos oficiales que aportan confianza
+        
+         
+              <br><br>
+              El patrón geométrico precolombino se aplicó en las tres presentaciones, 
+              unificando la línea desde lo simbólico y estético. La elección de tipografías
+               clásicas, paletas armónicas y el uso del dorado consolidan una sensación 
+               de sofisticación y autenticidad.
+               <br><br>
+               <b>Resultado</b><br>
+               El resultado es una marca con identidad coherente, culturalmente 
+               significativa y visualmente refinada. “KAKAW” logra conectar al 
+               consumidor con las raíces del cacao, mientras se adapta a las 
+               exigencias del mercado contemporáneo. 
+               Cada envase comunica su carácter propio sin romper 
+               la unidad visual del conjunto, ofreciendo una 
+               experiencia sensorial y simbólica completa.
+               La línea refuerza valores de origen, calidad,
+                bienestar y diseño consciente, posicionando a
+                 “KAKAW” como un producto que celebra el pasado
+                  ancestral del chocolate a través de una estética moderna, sobria y artesanal.
+                </p>
+</section>
+
+<!-- ===== PORTAFOLIO ===== -->
+<section id="portfolio">
+  <h2>CHOCOLATE</h2>
+  <div class="grid">
+    <!-- Cada div.work representa un proyecto. data-project se usa para JS -->
+    <div class="work" data-project="1"><img src="img/amargo.png" alt="Proyecto 1"><p> CHOCOLATE AMARGO</p></div>
+    <div class="work" data-project="2"><img src="img/blanco.png" alt="Proyecto 2"><p>CHOCOLATE BLANCO</p></div>
+    <div class="work" data-project="3"><img src="img/diabetico.png" alt="Proyecto 3"><p>CHOCOLATE PARA DIABETICOS</p></div>
+  </div>
+</section>
+
+
+
+<!-- ===== CONTACTO ===== -->
+<section id="contact">
+  <h2>Contacto</h2>
+  <form action="https://formspree.io/f/tu_form_id" method="POST">
+    <input type="text" name="name" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2025 Tu Nombre | Diseñador Gráfico</p>
+</footer>
+
+<!-- ===== MODAL PARA CARRUSEL ===== -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div class="carousel">
+      <button class="prev">&#10094;</button>
+      <img id="carousel-img" src="" alt="">
+      <button class="next">&#10095;</button>
+    </div>
+
+    <p id="project-description"></p>
+
+    <!-- 🔹 BOTÓN QUE LLEVA A OTRA PÁGINA -->
+    <a id="project-link" href="#" class="open-project-btn" target="_blank">Ver proyecto completo</a>
+  </div>
+</div>
+
+
+<!-- JS -->
+<script src="kakaw.js"></script>
+</body>
+</html>
