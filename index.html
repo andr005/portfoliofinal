@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porfolio André Chéchile proyecto final</title>
+  <!-- Enlace a la tipografía Inter desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <h1>André Chéchile</h1>
+  <nav>
+    <a href="#hero">INICIO</a>
+    <a href="#about">SOBRE MÍ</a>
+    <a href="#portfolio">TRABAJOS</a>
+    <a href="#contact">CONTACTO</a>
+  </nav>
+</header>
+
+<!-- ===== HERO / INICIO ===== -->
+<section id="hero">
+</section>
+
+<!-- ===== SOBRE MI ===== -->
+<section id="about">
+<center><h2>Sobre mí</h2></center> 
+ <p>Hola, soy André Chéchile, diseñador gráfico.
+Este portafolio reúne una parte de mi recorrido: proyectos, exploraciones y procesos que cuentan cómo veo y entiendo el diseño.
+Creo en el poder de la imagen como lenguaje, en las historias que se pueden construir con color, forma y tipografía.
+Gracias por pasar, espero que encuentres algo que te inspire.</p>
+<br>
+<h2>Misión</h2>
+<p>Mi misión es crear soluciones visuales que unan estética y funcionalidad,
+   ayudando a comunicar mensajes de manera efectiva, clara y memorable. Busco
+    transformar ideas en piezas gráficas que generen impacto, ya sea en formato
+     digital o impreso, manteniendo siempre un enfoque estratégico que responda
+      a los objetivos del proyecto. Trabajo con dedicación, atención al detalle
+       y sensibilidad creativa, aportando valor mediante propuestas visuales que 
+       no solo se vean bien, sino que realmente conecten con las personas.</p>
+<br>
+    <h2>Visión</h2>
+    <p>Mi visión es consolidarme como un profesional del diseño gráfico capaz
+       de abordar diversos estilos, formatos y necesidades visuales. Aspiro
+        a desarrollar proyectos que inspiren, que aporten soluciones creativas
+         a problemas reales y que exploren nuevas formas de comunicación visual.
+          Busco crecer constantemente, experimentar, aprender y adaptarme a las
+           tendencias sin perder mi identidad creativa. Deseo construir un camino
+            profesional donde cada proyecto sea una oportunidad para narrar historias,
+             despertar emociones y mejorar la experiencia visual de quienes interactúan
+              con mis diseños.</p>
+</section>
+
+<!-- ===== PORTAFOLIO ===== -->
+<section id="portfolio">
+  <h2>TRABAJOS</h2>
+  <div class="grid">
+    <!-- Cada div.work representa un proyecto. data-project se usa para JS -->
+    <div class="work" data-project="1"><img src="img/afiches/italia.png" alt="Proyecto 1"><p>Afiches Urbanos</p></div>
+    <div class="work" data-project="2"><img src="img/portadas/Nuevo Robinson.png" alt="Proyecto 2"><p>Portadas de libros</p></div>
+    <div class="work" data-project="3"><img src="img/kakaw/cajas.png" alt="Proyecto 3"><p>Diseño de packaging</p></div>
+    <div class="work" data-project="4"><img src="img/mentis/caratulamentis.png" alt="Proyecto 4"><p>Diseño de identidad</p></div>
+    <div class="work" data-project="5"><img src="img/señaletica/señaletica.png" alt="Proyecto 5"><p>Señaletica</p></div>
+    <div class="work" data-project="6"><img src="img/trabajos/dune.png" alt="Proyecto 6"><p>Más trabajos</p></div>
+
+  </div>
+</section>
+
+
+
+<!-- ===== CONTACTO ===== -->
+<section id="contact">
+  <h2>Contacto</h2>
+  <form action="https://formspree.io/f/tu_form_id" method="POST">
+    <input type="text" name="name" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2025 Tu Nombre | Diseñador Gráfico</p>
+</footer>
+
+<!-- ===== MODAL PARA CARRUSEL ===== -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div class="carousel">
+      <button class="prev">&#10094;</button>
+      <img id="carousel-img" src="" alt="">
+      <button class="next">&#10095;</button>
+    </div>
+
+    <p id="project-description"></p>
+
+    <!-- 🔹 BOTÓN QUE LLEVA A OTRA PÁGINA -->
+    <a id="project-link" href="#" class="open-project-btn" target="_blank">Ver proyecto completo</a>
+  </div>
+</div>
+
+
+<!-- JS -->
+<script src="js/script.js"></script>
+</body>
+</html>
