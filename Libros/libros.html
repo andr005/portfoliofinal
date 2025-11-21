@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porfolio André Chéchile proyecto final</title>
+  <!-- Enlace a la tipografía Inter desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="libro.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <h1>Portadas</h1>
+  <nav>
+    <a href="#hero"><a href="../index.html">INICIO</a></a>
+    <a href="#about">DESCRIPCIÓN</a>
+    <a href="#portfolio">TRABAJOS</a>
+    <a href="#contact">CONTACTO</a>
+  </nav>
+</header>
+
+<!-- ===== HERO / INICIO ===== -->
+<section id="hero">
+  <h2>Diseño elegante y minimalista que comunica con claridad.</h2>
+</section>
+
+<!-- ===== SOBRE MI ===== -->
+<section id="about">
+  <center><h2>Descrición</h2></center>
+  <p>Esta serie de portadas reinterpreta grandes obras de la literatura clásica desde una mirada contemporánea.
+El objetivo del proyecto es renovar la identidad visual de títulos icónicos sin perder su esencia original, explorando la relación entre texto, símbolo y emoción.
+<br>
+<br>
+Cada diseño busca capturar el espíritu de la obra a través del color, la composición y la tipografía, utilizando recursos gráficos que dialogan con la narrativa y el contexto histórico del libro.
+Las ilustraciones y elementos visuales fueron pensados para atraer al lector moderno, al mismo tiempo que rinden homenaje al legado cultural de los autores. <br>
+Entre los títulos representados se incluyen clásicos como El Señor de las moscas
+ de William Golding, Rebelión en la Granja de George Orwell, La Isla del Tesoro de Robert Louis Stevenson, 
+ El principito de Antoine de Saint-Exupéry, Robinson Crusoe de Daniel Defoe, Los viajes de Gulliver de Jonathan Swift
+y Encender una Hoguera de Jack London. <br>
+Cada portada plantea una lectura visual diferente, invitando a
+ redescubrir estas historias desde una nueva perspectiva estética.
+
+Este proyecto combina diseño editorial, análisis literario y creatividad visual,
+ demostrando cómo los clásicos pueden seguir inspirando nuevas formas de expresión gráfica.</p>
+</section>
+
+<!-- ===== PORTAFOLIO ===== -->
+<section id="portfolio">
+  <h2>Proyectos</h2>
+  <div class="grid">
+    <!-- Cada div.work representa un proyecto. data-project se usa para JS -->
+    <div class="work" data-project="1"><img src="img/principito/mokupanashe.png" alt="Proyecto 1"><p>El principito de Antoine de Saint-Exupéry</p></div>
+    <div class="work" data-project="2"><img src="img/el señor de las moscas/tercer.png" alt="Proyecto 2"><p>El Señor de las moscas</p></div>
+    <div class="work" data-project="3"><img src="img/rebelion/mockup_1.png" alt="Proyecto 3"><p>Rebelión en la Granja</p></div>
+    <div class="work" data-project="4"><img src="img/isla/segundo.png" alt="Proyecto 4"><p>La isla del tesoro</p></div>
+    <div class="work" data-project="5"><img src="img/robinson/mokuorobn.png" alt="Proyecto 5"><p>Robinson Crusoe</p></div>
+    <div class="work" data-project="6"><img src="img/guilliver/tercerguilli.png" alt="Proyecto 6"><p>Los viajes de Guilliver</p></div>
+    <div class="work" data-project="7"><img src="img/hoguera/aura.png" alt="Proyecto 7"><p>Encender una hoguera</p></div>
+  </div>
+  </div>
+</section>
+
+
+
+<!-- ===== CONTACTO ===== -->
+<section id="contact">
+  <h2>Contacto</h2>
+  <form action="https://formspree.io/f/tu_form_id" method="POST">
+    <input type="text" name="name" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2025 Tu Nombre | Diseñador Gráfico</p>
+</footer>
+
+<!-- ===== MODAL PARA CARRUSEL ===== -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div class="carousel">
+      <button class="prev">&#10094;</button>
+      <img id="carousel-img" src="" alt="">
+      <button class="next">&#10095;</button>
+    </div>
+
+    <p id="project-description"></p>
+
+    <!-- 🔹 BOTÓN QUE LLEVA A OTRA PÁGINA -->
+    <a id="project-link" href="#" class="open-project-btn" target="_blank">Ver proyecto completo</a>
+  </div>
+</div>
+
+
+<!-- JS -->
+<script src="libro.js"></script>
+</body>
+</html>
